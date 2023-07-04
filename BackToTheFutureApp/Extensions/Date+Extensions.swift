@@ -10,8 +10,7 @@ extension Date {
     
     func formattedDate() -> String {
         let dateFormatter = DateFormatter()
-        let date = Date()
         dateFormatter.dateStyle = .short
-        return dateFormatter.string(from: date)
+        return dateFormatter.string(from: self)
     }
 }
